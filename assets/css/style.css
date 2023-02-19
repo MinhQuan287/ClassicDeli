@@ -23,7 +23,7 @@ html{
 #header-home .language:hover{
     border: 1px solid aqua;
 }
-#header-home .language:hover .language-info{
+#header-home .language-choose:hover .language-info{
     display: block;
 }
 #header-home .language-info{
@@ -42,9 +42,12 @@ html{
     top: 0;
     right: 0;
 }
+.language-content .language-choose{
+    display: inline-block;
+}
 #header-home .language-info li:hover a{
     background-color: #ccc;
-    color: red;
+    color: #227487;
 }
 #header-home .language-info li a{
     text-decoration: none;
@@ -62,12 +65,13 @@ html{
 /* End Header */
 
 /* Begin content Hompage */
-.content-logo .navbar__logo{
-    width: 100%;
+.homepage-logo{
+    margin-left: 260px;
 }
 .content-logo{
     margin-top: 32px;
     margin-bottom: 48px;
+    margin-left: 40%;
 }
 .content-discription{
     max-width: 90%;

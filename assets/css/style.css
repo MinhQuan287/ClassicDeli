@@ -96,16 +96,24 @@ html{
     width: 100%;
     border-radius: 12px;
 }
+
+.content-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .content-location .content-sub-location{
     background-color: #227487;
     display: inline-block;
     font-size: 20px;
     padding: 13px 16px;
-    margin: 34px;
     width: 200px;
+    margin: 34px;
     color: #fff;
     text-align: center;
     border-radius: 5px;
+    text-decoration: none;
 }
 .content-location .content-sub-location:hover{
     color: #000;
@@ -158,3 +166,114 @@ html{
     opacity: 0.6;
 }
 /* End footer Homepage */
+
+/* Main of page */
+.header {
+    background-color: #000;
+}
+
+.header__text {
+    color: #fff;
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.navbar .navbar__logo {
+    height: 150px;   
+    flex-direction: row;
+}
+
+.navbar__search {
+    width: 450px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 7px 0 rgb(221 225 236 / 40%), 0 2px 4px 0 #dde1ec;
+    height: 60px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search__icon {
+    width: 10%;
+    text-align: center;
+}
+
+.search__icon i {
+    font-size: 2rem;
+    color: #000;
+    display: inline-block;
+    padding-top: 19px;
+}
+
+.search__input {
+    width: 70%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    outline: none;
+}
+
+.search__btn {
+    width: 20%;
+    border-radius: 30px;
+    height: 56px;
+    background-color: #227487;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar__signin {
+    height: 80px;
+    width: 60px;
+    line-height: 80px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navbar__cart {
+    width: 100px;
+    border-radius: 30px;
+    box-shadow: 0 5px 7px 0 rgb(221 225 236 / 40%), 0 2px 4px 0 #dde1ec;
+    height: 56px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.cart__text {
+    text-decoration: none;
+    line-height: 56px;
+    color: #000;
+}
+/*  */

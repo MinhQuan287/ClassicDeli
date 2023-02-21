@@ -29,3 +29,20 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
+
+.btn {
+    border-radius: 30px;
+    height: 56px;
+    background-color: #227487;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}

@@ -188,6 +188,7 @@ html{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
+    max-width: 100%;
 }
 
 .navbar .navbar__logo {
@@ -196,7 +197,7 @@ html{
 }
 
 .navbar__search {
-    width: 450px;
+    width: 500px;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 7px 0 rgb(221 225 236 / 40%), 0 2px 4px 0 #dde1ec;
@@ -210,12 +211,9 @@ html{
 .search__icon {
     width: 10%;
     text-align: center;
-}
-
-.search__icon i {
     font-size: 2rem;
     color: #000;
-    display: inline-block;
+    display: block;
     padding-top: 19px;
 }
 
@@ -233,46 +231,30 @@ html{
 
 .search__btn {
     width: 20%;
-    border-radius: 30px;
-    height: 56px;
-    background-color: #227487;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    border: none;
-    cursor: pointer;
 }
 
 .navbar__signin {
-    height: 80px;
-    width: 60px;
-    line-height: 80px;
-    text-decoration: none;
+    width: 100px;
+    box-shadow: 0 5px 7px 0 rgb(221 225 236 / 40%), 0 2px 4px 0 #dde1ec;
+    background-color: #fff;
+}
+
+.navbar__signin:hover .signin__text{
+    color: #227487;
+}
+
+.signin__text {
+    line-height: 56px;
     color: #000;
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-align: center;
 }
 
 .navbar__cart {
     width: 100px;
-    border-radius: 30px;
     box-shadow: 0 5px 7px 0 rgb(221 225 236 / 40%), 0 2px 4px 0 #dde1ec;
-    height: 56px;
-    text-align: center;
     background-color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
 }
 
-.cart__text .cart__count {
+.cart__text {
     text-decoration: none;
     line-height: 56px;
     color: #000;
@@ -286,7 +268,6 @@ html{
     bottom: 0;
     left: 0;
     display: flex;
-    animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay{
@@ -300,7 +281,6 @@ html{
     margin: auto;
     position: relative;
     z-index: 1;
-    animation: growth linear 0.1s; 
 }
 
 /* Cart */
@@ -362,3 +342,41 @@ html{
 
 
 
+.navbar__cart-icon {
+    width: 10%;
+    height: 56px;
+    color: #000;
+}
+
+.content__category {
+
+}
+
+.catefory-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30px;
+}
+
+.category-item {
+    font-size: 2rem;
+    list-style: none;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.category__aside-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 32px 50px;
+}
+
+.category__aside-item {
+    font-size: 1.6rem;
+    list-style: none;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+}
+/*  */

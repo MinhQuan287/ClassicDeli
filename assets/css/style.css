@@ -255,9 +255,92 @@ html{
 }
 
 .cart__text {
+    text-decoration: none;
     line-height: 56px;
     color: #000;
 }
+
+/*Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body{
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cart */
+
+.cart {
+    position: fixed;
+    height: 100%;
+    width: 350px;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+   /* padding: 12px 20px;*/
+    z-index: 10000;
+}
+
+.cart__close {
+    font-size: 12px;
+    top: 30px;
+    left: unset;
+    right: 20px;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    color: #7b7b7b;
+}
+
+.cart-title {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    text-align: left;
+    width: 100%;
+}
+
+.text-center {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000;
+    text-align: left;
+    margin-top: 0;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.cart__no-item {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    font-family: "PulpDisplay Regular",sans-serif;
+}
+
+
 
 .navbar__cart-icon {
     width: 10%;
